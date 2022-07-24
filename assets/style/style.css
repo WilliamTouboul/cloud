@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyHome {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.bodyCloud {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(37, 31, 48);
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.filter {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(32, 32, 32, 0.568);
+}
+
+#cloud {
+    position: absolute;
+    font-size: 28px;
+    padding: 28px 46px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 9999;
+    background-color: transparent;
+    border: 2px white solid;
+
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#cloud:hover {
+    background-color: rgba(19, 19, 19, 0.3);
+    border: 2px rgb(180, 180, 180) solid;
+
+}
+
+#cloud:hover a {
+    color: rgb(180, 180, 180)
+}
+
+#cloud a {
+    text-decoration: none;
+    color: white;
+
+}
